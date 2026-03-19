@@ -72,7 +72,7 @@
 
   .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 24px;
     margin-bottom: 40px;
     opacity: 0;
@@ -105,6 +105,10 @@
 
   .card:nth-child(2)::before {
     background: var(--gold);
+  }
+
+  .card:nth-child(3)::before {
+    background: var(--green);
   }
 
   .card:hover {
@@ -195,6 +199,18 @@
       <span class="card-icon">🍽️</span>
       <div class="card-title">Dining Guide</div>
       <div class="card-description">Restaurants, tacos, tasting menus, craft beer bars & mezcalerías for every day</div>
+    </a>
+
+    <a href="mexico-city-background.html" class="card">
+      <span class="card-icon">📚</span>
+      <div class="card-title">Background & Context</div>
+      <div class="card-description">Historical and cultural context for the sites we're visiting</div>
+    </a>
+
+    <a href="https://www.nytimes.com/interactive/2026/01/22/travel/things-to-do-mexico-city.html" class="card" target="_blank" rel="noopener">
+      <span class="card-icon">📰</span>
+      <div class="card-title">NY Times Guide</div>
+      <div class="card-description">Additional perspectives and recommendations from The New York Times travel section</div>
     </a>
   </div>
 
